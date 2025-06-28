@@ -18,7 +18,7 @@ else:
 
 my_cursor = my_db.cursor()
 
-my_cursor.execute('''CREATE DATABASE alx_book_store''')
+my_cursor.execute('''CREATE DATABASE IF NOT EXISTS alx_book_store''')
 
 my_cursor.close()
 my_db.close()
